@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Me</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>King Emanuel</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<section class="container">
+    <h1>About Me</h1>
+    <p>
+        I started with nothing. No support. Just a vision.
+        Today, I create content that makes people smile, think, and feel inspired.
+    </p>
+
+    <p>
+        My mission is simple: Turn creativity into impact and build a global brand from Tanzania.
+    </p>
+</section>
+
+<footer>© 2026 King Emanuel</footer>
+
+</body>
+</html>
