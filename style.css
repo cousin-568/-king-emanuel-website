@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0b1120;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #020617;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(#2563eb, #020617);
+}
+
+.container {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background: #020617;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
