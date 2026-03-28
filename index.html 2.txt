@@ -30,7 +30,10 @@
         <div class="card">🌞 Positive Mindset</div>
         <div class="card">🎨 Creative Artist</div>
         <div class="card">🇹🇿 Proudly TZ</div>
-    </div>
+    </div> 
+<div style="text-align:center; margin-top:40px; font-style:italic; font-size:1.2rem; color:#38bdf8;">
+    "Started with nothing. Now watch me build everything."
+</div>
 </section>
 
 <footer>© 2026 King Emanuel</footer>
