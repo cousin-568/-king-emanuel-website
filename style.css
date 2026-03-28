@@ -146,4 +146,30 @@ footer {
         transform: translateY(0);
     }
 }
+/* MENU BUTTON */
+.menu-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+}
 
+/* MOBILE MENU */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background: #020617;
+}
+
+.mobile-menu a {
+    padding: 15px;
+    border-top: 1px solid #111;
+    color: white;
+    text-decoration: none;
+}
+
+/* SHOW MENU */
+.mobile-menu.show {
+    display: flex;
+}
