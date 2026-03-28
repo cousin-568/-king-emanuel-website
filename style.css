@@ -73,7 +73,11 @@ nav a {
     padding: 20px;
     border-radius: 14px;
     text-align: center;
-    transition: 0.3s;
+
+    /* 🔥 Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
 }
 
 .card:hover {
@@ -136,3 +140,10 @@ footer {
         font-size: 3rem;
     }
 }
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
