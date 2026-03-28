@@ -1,49 +1,138 @@
-body {
+* {
     margin: 0;
-    font-family: Arial;
-    background: #0b1120;
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b1120;
+    color: #e5e7eb;
+}
+
+/* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
+    align-items: center;
+    padding: 15px 20px;
     background: #020617;
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    font-size: 1.2rem;
+}
+
+nav div {
+    display: flex;
+    gap: 12px;
 }
 
 nav a {
-    margin: 0 10px;
-    color: white;
+    color: #e5e7eb;
     text-decoration: none;
+    font-size: 0.9rem;
 }
 
+/* HERO */
 .hero {
     text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(#2563eb, #020617);
+    padding: 80px 20px 60px;
+    background: radial-gradient(circle at top, #2563eb, #020617);
 }
 
+.hero h1 {
+    font-size: 2.2rem;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* CONTAINER */
 .container {
-    padding: 50px 20px;
+    padding: 40px 15px;
     max-width: 1000px;
     margin: auto;
 }
 
+/* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 15px;
 }
 
+/* CARDS */
 .card {
-    padding: 20px;
     background: #020617;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    transition: 0.3s;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(56,189,248,0.4);
+}
+
+/* BUTTON STYLE */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: #2563eb;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FORM */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
     background: #020617;
+    font-size: 0.8rem;
+}
+
+/* 🔥 TABLET */
+@media(min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 🔥 DESKTOP */
+@media(min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
 }
