@@ -146,30 +146,32 @@ footer {
         transform: translateY(0);
     }
 }
-/* MENU BUTTON */
-.menu-btn {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: white;
+/* hide checkbox */
+#menu-toggle {
+    display: none;
 }
 
-/* MOBILE MENU */
-.mobile-menu {
+/* menu icon */
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* menu hidden by default */
+.menu {
     display: none;
     flex-direction: column;
-    text-align: center;
     background: #020617;
+    text-align: center;
 }
 
-.mobile-menu a {
+/* show when clicked */
+#menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+}
+
+.menu a {
     padding: 15px;
-    border-top: 1px solid #111;
     color: white;
     text-decoration: none;
-}
-
-/* SHOW MENU */
-.mobile-menu.show {
-    display: flex;
 }
